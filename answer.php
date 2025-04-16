@@ -29,22 +29,18 @@
       <div class="right-image">
         <img src="./images/dice.gif" alt="Dice gif image" width="500" />
       </div>
-      <br />
-      <div class="page-content-guide">Pick a number between 1 to 6 to guess</div>
-      <div class="page-content-php">
-        <form action="./answer.php" method="GET">
-          <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="user-number" />
-            <label class="mdl-textfield__label" for="user-number">Number...</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-          <br />
-          <!-- Accent-colored raised button with ripple -->
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-            type="submit">
-            Check the answer
-          </button>
-        </form>
+      <div class="page-content-answer">
+        <div id="answer">
+          <?php
+          // input
+          $userNumber = $_GET["user-number"];
+          // process
+          // output
+          ?>
+        </div>
+      </div>
+      <div class="page-content-return">
+        <a href="./index.php">Return ...</a>
       </div>
     </main>
   </div>
