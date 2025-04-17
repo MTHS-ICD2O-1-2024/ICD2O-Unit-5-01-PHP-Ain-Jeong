@@ -40,6 +40,7 @@
           if ($randomNumber === $userNumber) {
             // output
             echo "You have guessed the right number!";
+            return;
           }
           if ($randomNumber !== $userNumber) {
             // output
