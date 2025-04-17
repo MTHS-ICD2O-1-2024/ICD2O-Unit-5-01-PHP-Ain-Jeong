@@ -32,10 +32,19 @@
       <div class="page-content-answer">
         <div id="answer">
           <?php
+          // generate random number
+          $randomNumber = random_int(1, 6);
           // input
           $userNumber = $_GET["user-number"];
           // process
-          // output
+          if ($randomNumber === $userNumber) {
+            // output
+            echo "You have guessed the right number!";
+          }
+          if ($randomNumber !== $userNumber) {
+            // output
+            echo "You have guessed the wrong number! The answer was " . $randomNumber . ".";
+          }
           ?>
         </div>
       </div>
